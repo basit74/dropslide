@@ -1,0 +1,50 @@
+/* TOUCH MENU Navi */
+.nav-touch-menu {width: 100%;}
+.nav-touch-menu a{padding: 13px 0; cursor: pointer; }
+.nav-touch-menu .switch-btn{float: left; width: 50%; text-align: center;}
+/*.nav-touch-menu .switch-btn:first-of-type {border-right: 1px solid #d9d9d9;}*/
+.nav-touch-menu .switch-btn span{font-size: 16px; font-weight: 600; color: #666666; margin-right: 10px;}
+
+
+/* TOUCH MENU List */
+.container-touch-menu{display: block; width: 100%; top: 82px; left: 0; background-color: #fff;}
+.container-touch-menu > ul > li {border-bottom: 1px solid #d9d9d9;}
+.container-touch-menu ul li a {display: block; font-size: 16px; font-weight: 600; padding: 10px 15px; position: relative; color: #434343;}
+.container-touch-menu ul li a:after {font-family: 'icomoon'; font-size: 9px; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e612";  font-weight: 800;  right: 20px;  position: absolute;  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.container-touch-menu ul li.has-child > a:after {content: "\e605";}
+.container-touch-menu ul li.has-child > a.active:after {content: "\e616";}
+.container-touch-menu ul ul {display: none; padding-left: 35px;}
+.container-touch-menu ul ul li a {padding: 5px 5px 5px 30px;}
+
+/* FONT & ICON
+===========================================*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icon/icomoon.eot?k7qikw');
+  src:  url('../icon/icomoon.eot?k7qikw#iefix') format('embedded-opentype'),
+    url('../icon/icomoon.ttf?k7qikw') format('truetype'),
+    url('../icon/icomoon.woff?k7qikw') format('woff'),
+    url('../icon/icomoon.svg?k7qikw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+    font-family: 'icomoon';
+    font-size: 9px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

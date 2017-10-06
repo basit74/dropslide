@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Dropdown Menu :: DEMO</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/menu.css" media="all" />
+	
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+				
+				<!-- Mobile Menü Navigation - Kategorien -->
+				<div id="nav-touch-menu" class="nav-touch-menu clearfix">
+					<button class="close-btn" style="display: none;"><span class="icon icon-close"></span><span>Schließen</span></button>
+					<a id="Kategorie" class="switch-btn"><span>Kategorie</span><span class="icon icon-down"></span></a>
+					<a id="Detailsuche" class="switch-btn btn-switch" data-id="search-filter"><span>Detailsuche</span><span class="icon icon-down"></span></a>
+				</div>			
+				
+			</div>
+		</div>
+	
+			<div class="col-sm-8">
+				<div class="blue-box">
+
+				<nav id="touch-menu" style="display: block;" class="container-touch-menu">
+					
+					<a class="back-link">Alle Kategorien</a>
+
+					<ul data-back-link-text = "Alle Kategorien" >							
+
+						<li class="branch ">			
+							<a href="/">Städte</a>
+							<ul>
+								<li><h5>Städte</h5></li>
+								<li><a href="/">Österreich</a></li>
+								<li>
+									<a href="/">Deutschland</a>
+									<ul data-back-link-text = "Alle Länder">
+										<li><a href="/">Berlin</a></li>
+										<li><a href="/">Hamburg</a></li>
+										<li><a href="/">Bodensee</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="branch ">			
+							<a href="/">Wellness</a>
+							<ul>
+								<li><h5>Wellness</h5></li>
+								<li><a href="/">Österreich</a></li>
+								<li><a href="/">Deutschland</a></li>
+							</ul>
+						</li>
+						<li class="branch ">			
+							<a href="/">Family</a>
+							<ul>
+								<li><h5>Family</h5></li>
+								<li><a href="/">Österreich</a></li>
+								<li><a href="/">Deutschland</a></li>
+							</ul>
+						</li>
+						<li class="branch ">			
+							<a href="/">Sommer</a>
+							<ul>
+								<li><h5>Sommer</h5></li>
+								<li><a href="/">Österreich</a></li>
+								<li><a href="/">Deutschland</a></li>
+							</ul>
+						</li>
+						<li class="branch ">			
+							<a href="/">All inclusive</a>
+							<ul>
+								<li><h5>All inclusive</h5></li>
+								<li><a href="/">Österreich</a></li>
+								<li><a href="/">Deutschland</a></li>
+							</ul>
+						</li>
+				
+
+					</ul>
+				</nav>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery-dropdown.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$("#touch-menu").dropdown()
+		});
+	</script>
+
+</body>
+</html>
